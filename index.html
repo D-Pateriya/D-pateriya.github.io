@@ -1,76 +1,793 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Deepika Pateriya</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Dr. Deepika Pateriya | Microbiome Bioinformatics & Computational Biology</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Personal website of Dr. Deepika Pateriya, PhD in Biological Sciences, specializing in human microbiome metagenomics, computational biology, and machine learning-based disease prediction.">
+    <meta name="keywords" content="Deepika Pateriya, Microbiome, Metagenomics, Bioinformatics, Computational Biology, Machine Learning, CRCpred, IISER Bhopal, Bioinformatician">
+    <meta name="author" content="Deepika Pateriya">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Dr. Deepika Pateriya | Microbiome Bioinformatics">
+    <meta property="og:description" content="PhD in Biological Sciences at IISER Bhopal. Metagenomics, Computational Biology, and Machine Learning.">
+    <meta property="og:image" content="/public/hero_bg.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:title" content="Dr. Deepika Pateriya | Microbiome Bioinformatics">
+    <meta property="twitter:description" content="PhD in Biological Sciences at IISER Bhopal. Metagenomics, Computational Biology, and Machine Learning.">
+    <meta property="twitter:image" content="/public/hero_bg.jpg">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Lucide Icons CDN -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="/style.css">
 </head>
-
 <body>
+    <!-- Background Elements -->
+    <div class="glow-bg glow-1"></div>
+    <div class="glow-bg glow-2"></div>
+    <div class="glow-bg glow-3"></div>
 
-<header>
-    <h1>Deepika Pateriya</h1>
-    <p>PhD in Computational Biology</p>
+    <!-- Navigation Header -->
+    <header class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                <span class="logo-accent">&lt;</span>DP<span class="logo-accent">/&gt;</span>
+            </a>
+            
+            <nav class="nav-menu" id="nav-menu">
+                <a href="#about" class="nav-link">About</a>
+                <a href="#experience" class="nav-link">Experience</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#publications" class="nav-link">Publications</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#contact" class="nav-link nav-btn">Contact</a>
+            </nav>
 
-    <nav>
-        <a href="#about">About</a>
-        <a href="#research">Research</a>
-        <a href="#publications">Publications</a>
-        <a href="#contact">Contact</a>
-    </nav>
-</header>
+            <div class="nav-actions">
+                <!-- Theme Toggle -->
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark/light theme">
+                    <i data-lucide="sun" class="sun-icon"></i>
+                    <i data-lucide="moon" class="moon-icon"></i>
+                </button>
+                
+                <!-- Mobile Toggle -->
+                <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle mobile menu">
+                    <i data-lucide="menu" class="menu-open"></i>
+                    <i data-lucide="x" class="menu-close"></i>
+                </button>
+            </div>
+        </div>
+    </header>
 
-<section id="about">
-    <h2>About Me</h2>
+    <!-- Hero Section -->
+    <section class="hero-section" id="home">
+        <div class="hero-bg-overlay"></div>
+        <div class="container hero-container">
+            <div class="hero-content">
+                <div class="badge hero-badge">
+                    <span class="badge-dot"></span> Computational Biologist & PhD
+                </div>
+                <h1 class="hero-title">
+                    Dr. Deepika <span class="text-gradient">Pateriya</span>
+                </h1>
+                <p class="hero-subtitle">
+                    PhD in Biological Sciences | Microbiome Bioinformatics & Computational Biology
+                </p>
+                <p class="hero-description">
+                    Recently awarded PhD researcher from the Indian Institute of Science Education and Research (IISER), Bhopal. Specializing in human microbiome metagenomics, large-scale data integration, and machine learning-based health and disease predictions.
+                </p>
+                <div class="hero-ctas">
+                    <a href="#contact" class="btn btn-primary">
+                        Get In Touch <i data-lucide="arrow-right"></i>
+                    </a>
+                    <a href="/public/cv.pdf" class="btn btn-secondary" target="_blank" download="Deepika_Pateriya_CV.pdf">
+                        Download CV <i data-lucide="download"></i>
+                    </a>
+                </div>
+                <div class="hero-socials">
+                    <a href="mailto:deepikapateriya94@gmail.com" title="Email" target="_blank" class="social-icon">
+                        <i data-lucide="mail"></i>
+                    </a>
+                    <a href="https://orcid.org/0009-0004-5618-8556" title="ORCID" target="_blank" class="social-icon">
+                        <i data-lucide="hash"></i>
+                    </a>
+                    <a href="#" title="Google Scholar" target="_blank" class="social-icon">
+                        <i data-lucide="graduation-cap"></i>
+                    </a>
+                    <a href="#" title="GitHub" target="_blank" class="social-icon">
+                        <i data-lucide="github"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="avatar-wrapper">
+                    <div class="avatar-glow"></div>
+                    <img src="/public/avatar.jpg" alt="Dr. Deepika Pateriya" class="avatar-image">
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <p>
-        I am a Computational Biologist interested in microbiome research,
-        machine learning, bioinformatics, and cancer biology.
-    </p>
+    <!-- Academic & Research Stats -->
+    <section class="stats-section">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-value text-gradient">6+</div>
+                    <div class="stat-label">Years of Research</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value text-gradient">4+</div>
+                    <div class="stat-label">Publications & Chapters</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value text-gradient">25k+</div>
+                    <div class="stat-label">Metagenomic Samples Processed</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value text-gradient">AIR 18</div>
+                    <div class="stat-label">CSIR-UGC NET rank</div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <p>
-        I recently completed my PhD at IISER Bhopal and am currently
-        looking for postdoctoral opportunities.
-    </p>
-</section>
+    <!-- Research Profile / About Section -->
+    <section class="about-section section-padding" id="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Research Profile</h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="about-grid">
+                <div class="about-text-content">
+                    <p class="lead-text">
+                        Deepika has a rich academic background in analyzing human gut microbiome datasets to uncover critical health biomarkers and bacterial dynamics.
+                    </p>
+                    <p>
+                        Her expertise encompasses human microbiome bioinformatics, large-scale metagenomic data analysis, and machine learning-based disease prediction. She is highly experienced in analyzing complex datasets to characterize microbial community structure and functional diversity, which directly feeds into biomarker discovery.
+                    </p>
+                    <p>
+                        During her PhD at IISER Bhopal, she developed robust computational pipelines, integrated multi-omics datasets, and performed population-level comparative analyses. She remains deeply interested in investigating host-microbe interactions, microbial metabolism, and microbial community ecology.
+                    </p>
+                </div>
+                <div class="about-highlight-cards">
+                    <div class="highlight-card">
+                        <div class="highlight-icon green-glow">
+                            <i data-lucide="dna"></i>
+                        </div>
+                        <div class="highlight-info">
+                            <h3>Metagenomics</h3>
+                            <p>Analyzing amplicon, shotgun metagenomics, and MAGs assembly.</p>
+                        </div>
+                    </div>
+                    <div class="highlight-card">
+                        <div class="highlight-icon cyan-glow">
+                            <i data-lucide="binary"></i>
+                        </div>
+                        <div class="highlight-info">
+                            <h3>Machine Learning</h3>
+                            <p>XGBoost, Random Forest, and ANN classifiers for disease prediction.</p>
+                        </div>
+                    </div>
+                    <div class="highlight-card">
+                        <div class="highlight-icon purple-glow">
+                            <i data-lucide="server"></i>
+                        </div>
+                        <div class="highlight-info">
+                            <h3>HPC & Scale</h3>
+                            <p>High-performance computing processing 13k+ metagenomes.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<section id="research">
-    <h2>Research Interests</h2>
+    <!-- Research Experience (Timeline) Section -->
+    <section class="experience-section section-padding section-alt" id="experience">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Research Experience</h2>
+                <p class="section-subtitle">MetaBioSys Lab, IISER Bhopal | Supervisor: Prof. Vineet K. Sharma</p>
+                <div class="section-divider"></div>
+            </div>
+            
+            <div class="lab-visit">
+                <a href="https://metabiosys.iiserb.ac.in/" target="_blank" class="lab-link btn btn-secondary">
+                    <i data-lucide="external-link"></i> Visit Lab Page
+                </a>
+            </div>
 
-    <ul>
-        <li>Human Gut Microbiome</li>
-        <li>Machine Learning</li>
-        <li>Metagenomics</li>
-        <li>Cancer Bioinformatics</li>
-        <li>Antimicrobial Resistance</li>
-    </ul>
-</section>
+            <div class="timeline">
+                <!-- Timeline Item 1 -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">Nov 2025 – Feb 2026</div>
+                    <div class="timeline-content glass-card">
+                        <span class="role-badge">Ad-hoc</span>
+                        <h3 class="timeline-title">Project Fellow</h3>
+                        <p class="timeline-subtitle">IISER Bhopal, India</p>
+                        <ul class="timeline-details">
+                            <li>Analyzed carbohydrate-active enzyme (CAZyme) repertoires across ~13,000 metagenomic samples to understand nutrient utilization.</li>
+                            <li>Investigated population-level variations in microbial carbohydrate metabolism.</li>
+                            <li><strong>Skills:</strong> Large-scale data processing, HPC computing, functional profiling, comparative microbiome analysis.</li>
+                        </ul>
+                    </div>
+                </div>
 
-<section id="publications">
-    <h2>Selected Publications</h2>
+                <!-- Timeline Item 2 -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">2022 – 2025</div>
+                    <div class="timeline-content glass-card">
+                        <span class="role-badge">SRF</span>
+                        <h3 class="timeline-title">Senior Research Fellow</h3>
+                        <p class="timeline-subtitle">IISER Bhopal, India</p>
+                        <ul class="timeline-details">
+                            <li>Developed a machine learning-based prediction tool (CRCpred) trained on ~1,800 samples, integrating XGBoost, Random Forest, and Artificial Neural Networks for Colorectal Cancer (CRC) prediction using microbiome profiles.</li>
+                            <li>Processed 11,270 publicly available gut metagenomic samples from 66 studies to generate microbial abundance profiles for health status predictions.</li>
+                            <li>Performed large-scale resistome analysis across ~12,000 metagenomic samples and 289,232 gut bacterial genomes to study antimicrobial resistance dynamics globally.</li>
+                            <li><strong>Skills:</strong> Machine learning, feature selection, Python, large-scale multi-cohort analysis (~12,000+ samples).</li>
+                        </ul>
+                    </div>
+                </div>
 
-    <p>• CRCpred – Machine Learning Framework for Colorectal Cancer Prediction</p>
+                <!-- Timeline Item 3 -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">2020 – 2022</div>
+                    <div class="timeline-content glass-card">
+                        <span class="role-badge">JRF</span>
+                        <h3 class="timeline-title">Junior Research Fellow</h3>
+                        <p class="timeline-subtitle">IISER Bhopal, India</p>
+                        <ul class="timeline-details">
+                            <li>Investigated flavonoid metabolism in the human gut microbiome using large-scale genomic and metagenomic datasets.</li>
+                            <li>Identified microbial genes and pathways involved in flavonoid biotransformation and analyzed their distribution across diverse populations and health conditions.</li>
+                            <li><strong>Skills:</strong> Biochemical databases, metagenomic data preprocessing, taxonomic and functional profiling, statistical analysis in R.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <p>• Flavonoid-Modifying Enzymes in the Human Gut Microbiome</p>
+    <!-- Key Research Projects Section -->
+    <section class="projects-section section-padding" id="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Key Research Projects</h2>
+                <div class="section-divider"></div>
+            </div>
+            
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card glass-card">
+                    <div class="project-header">
+                        <div class="project-icon"><i data-lucide="microscope"></i></div>
+                        <span class="project-status status-published">Published</span>
+                    </div>
+                    <h3 class="project-title">Flavonoid Metabolism in the Human Gut Microbiome</h3>
+                    <p class="project-desc">
+                        A large-scale metagenomic landscape study showing the metabolic pathways and distribution of flavonoid-degrading genes in human microbiomes across global populations and health states.
+                    </p>
+                    <div class="project-tags">
+                        <span>Metagenomics</span>
+                        <span>R</span>
+                        <span>Biochemistry</span>
+                    </div>
+                    <a href="https://doi.org/10.1080/29933935.2025.2520788" target="_blank" class="project-link">
+                        Read Publication <i data-lucide="arrow-up-right"></i>
+                    </a>
+                </div>
 
-</section>
+                <!-- Project 2 -->
+                <div class="project-card glass-card">
+                    <div class="project-header">
+                        <div class="project-icon"><i data-lucide="brain-circuit"></i></div>
+                        <span class="project-status status-published">Published</span>
+                    </div>
+                    <h3 class="project-title">CRCpred: Colorectal Cancer Prediction Tool</h3>
+                    <p class="project-desc">
+                        An AI-ML tool that leverages gut microbiome taxonomic profiles to predict Colorectal Cancer (CRC) risk. Built using an ensemble model combining XGBoost, RF, and ANN models.
+                    </p>
+                    <div class="project-tags">
+                        <span>Machine Learning</span>
+                        <span>Python</span>
+                        <span>Diagnostics</span>
+                    </div>
+                    <a href="https://doi.org/10.1016/j.compbiomed.2025.110592" target="_blank" class="project-link">
+                        Access Model <i data-lucide="arrow-up-right"></i>
+                    </a>
+                </div>
 
-<section id="contact">
+                <!-- Project 3 -->
+                <div class="project-card glass-card">
+                    <div class="project-header">
+                        <div class="project-icon"><i data-lucide="shield-alert"></i></div>
+                        <span class="project-status status-review">Under Revision</span>
+                    </div>
+                    <h3 class="project-title">Global Antimicrobial Resistance Dynamics</h3>
+                    <p class="project-desc">
+                        Analysis of the resistome composition across ~12,000 gut metagenomic samples and 289,000+ genomes to understand factors shaping antibiotic resistance genes across global human populations.
+                    </p>
+                    <div class="project-tags">
+                        <span>Resistome</span>
+                        <span>HPC</span>
+                        <span>AMR Dynamics</span>
+                    </div>
+                    <span class="project-note">In review: Gut Pathogens</span>
+                </div>
 
-<h2>Contact</h2>
+                <!-- Project 4 -->
+                <div class="project-card glass-card">
+                    <div class="project-header">
+                        <div class="project-icon"><i data-lucide="heart-pulse"></i></div>
+                        <span class="project-status status-review">Under Revision</span>
+                    </div>
+                    <h3 class="project-title">MetaPHD: Metagenome Health & Disease Tool</h3>
+                    <p class="project-desc">
+                        A machine learning-based classifier for general health and multi-disease status prediction utilizing unified abundance profiles from over 11,000 human metagenomes.
+                    </p>
+                    <div class="project-tags">
+                        <span>Disease Prediction</span>
+                        <span>ANN</span>
+                        <span>Metagenome Profiles</span>
+                    </div>
+                    <span class="project-note">In review: BMC Biology</span>
+                </div>
 
-<p>Email: your@email.com</p>
+                <!-- Project 5 -->
+                <div class="project-card glass-card">
+                    <div class="project-header">
+                        <div class="project-icon"><i data-lucide="activity"></i></div>
+                        <span class="project-status status-prep">In Prep</span>
+                    </div>
+                    <h3 class="project-title">CAZyme Repertoires in the Gut Microbiome</h3>
+                    <p class="project-desc">
+                        Investigating population-level variations in carbohydrate-active enzymes (CAZymes) across ~13,000 human gut metagenomes to decipher dietary and nutrient utilization patterns.
+                    </p>
+                    <div class="project-tags">
+                        <span>CAZymes</span>
+                        <span>Enzymology</span>
+                        <span>Comparative Metagenomics</span>
+                    </div>
+                    <span class="project-note">Manuscript under preparation</span>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<p>GitHub: github.com/D-pateriya</p>
+    <!-- Publications Section -->
+    <section class="publications-section section-padding section-alt" id="publications">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Publications & Books</h2>
+                <div class="section-divider"></div>
+            </div>
 
-</section>
+            <!-- Filter Tabs -->
+            <div class="filter-tabs">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="journals">Journal Papers</button>
+                <button class="filter-btn" data-filter="chapters">Book Chapters</button>
+                <button class="filter-btn" data-filter="preprints">Preprints / Review</button>
+            </div>
 
-<footer>
+            <div class="publications-list">
+                <!-- Publication 1 -->
+                <div class="pub-item glass-card" data-category="journals">
+                    <div class="pub-meta">
+                        <span class="pub-type">Journal Article</span>
+                        <span class="pub-year">2025</span>
+                    </div>
+                    <h3 class="pub-title">Landscape of flavonoid metabolism in human gut microbiome and its association with health and disease</h3>
+                    <p class="pub-authors">
+                        <strong>Pateriya D</strong>, Prasoodanan P.K. V, Scaria J, Sharma V.K.
+                    </p>
+                    <p class="pub-journal">
+                        <em>Gut Microbes Reports</em>, 2(1).
+                    </p>
+                    <a href="https://doi.org/10.1080/29933935.2025.2520788" target="_blank" class="pub-doi-link">
+                        <i data-lucide="link"></i> doi:10.1080/29933935.2025.2520788
+                    </a>
+                </div>
 
-<p>© 2026 Deepika Pateriya</p>
+                <!-- Publication 2 -->
+                <div class="pub-item glass-card" data-category="journals">
+                    <div class="pub-meta">
+                        <span class="pub-type">Journal Article</span>
+                        <span class="pub-year">2025</span>
+                    </div>
+                    <h3 class="pub-title">CRCpred: An AI-ML tool for colorectal cancer prediction using gut microbiome</h3>
+                    <p class="pub-authors">
+                        <strong>Pateriya D</strong>, Malwe A.S., Sharma V.K.
+                    </p>
+                    <p class="pub-journal">
+                        <em>Computers in Biology and Medicine</em>.
+                    </p>
+                    <a href="https://doi.org/10.1016/j.compbiomed.2025.110592" target="_blank" class="pub-doi-link">
+                        <i data-lucide="link"></i> doi:10.1016/j.compbiomed.2025.110592
+                    </a>
+                </div>
 
-</footer>
+                <!-- Publication 3 -->
+                <div class="pub-item glass-card" data-category="preprints">
+                    <div class="pub-meta">
+                        <span class="pub-type">Under Revision</span>
+                        <span class="pub-year">2026</span>
+                    </div>
+                    <h3 class="pub-title">Global insights into the dynamics of antibiotic resistance genes and factors shaping the human resistome</h3>
+                    <p class="pub-authors">
+                        <strong>Pateriya D</strong>, Tanwar A, Sharma V.K.
+                    </p>
+                    <p class="pub-journal">
+                        Submitted to <em>Gut Pathogens</em>.
+                    </p>
+                </div>
 
+                <!-- Publication 4 -->
+                <div class="pub-item glass-card" data-category="preprints">
+                    <div class="pub-meta">
+                        <span class="pub-type">Under Revision</span>
+                        <span class="pub-year">2026</span>
+                    </div>
+                    <h3 class="pub-title">MetaPHD: A machine learning tool for metagenome-based prediction of population, health, and disease</h3>
+                    <p class="pub-authors">
+                        Longwani U, <strong>Pateriya D</strong>, Malwe A.S., Sharma V.K.
+                    </p>
+                    <p class="pub-journal">
+                        Submitted to <em>BMC Biology</em>.
+                    </p>
+                </div>
+
+                <!-- Publication 5 -->
+                <div class="pub-item glass-card" data-category="chapters">
+                    <div class="pub-meta">
+                        <span class="pub-type">Book Chapter</span>
+                        <span class="pub-year">2026 (In Press)</span>
+                    </div>
+                    <h3 class="pub-title">Emerging role of the microbiome in cancer progression and therapeutic implications</h3>
+                    <p class="pub-authors">
+                        <strong>Pateriya D.</strong> & Sharma, V. K.
+                    </p>
+                    <p class="pub-journal">
+                        In <em>Understanding Cancer Biology: Genetics, Molecular Biology, and Cellular Signaling Perspective</em> (Eds. Datta et al.). Jenny Stanford Publishing.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technical Skills Section -->
+    <section class="skills-section section-padding" id="skills">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Technical Skills</h2>
+                <div class="section-divider"></div>
+            </div>
+
+            <div class="skills-grid">
+                <!-- Skill Category 1 -->
+                <div class="skill-category glass-card">
+                    <h3>Bioinformatics & Omics</h3>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Sequencing Data Analysis (Amplicon & Shotgun)</span>
+                                <span>95%</span>
+                            </div>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 95%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Prokaryotic WGS & Phylogenetics</span>
+                                <span>90%</span>
+                            </div>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 90%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>MAG Assembly & Transcriptomics</span>
+                                <span>85%</span>
+                            </div>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 85%"></div></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Skill Category 2 -->
+                <div class="skill-category glass-card">
+                    <h3>Data Analysis & Integration</h3>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Large-scale Cohort Data Processing</span>
+                                <span>95%</span>
+                            </div>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 95%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Multi-omics Integration</span>
+                                <span>90%</span>
+                            </div>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 90%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Microbiome Statistical Modeling</span>
+                                <span>90%</span>
+                            </div>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 90%"></div></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Skill Category 3 -->
+                <div class="skill-category glass-card">
+                    <h3>Machine Learning</h3>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Model Architecture (RF, XGBoost, ANN)</span>
+                                <span>90%</span>
+                            </div>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 90%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Feature Selection & Dimensionality Reduction</span>
+                                <span>88%</span>
+                            </div>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 88%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Web-based Tool Deployment</span>
+                                <span>80%</span>
+                            </div>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 80%"></div></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Skill Category 4 -->
+                <div class="skill-category glass-card">
+                    <h3>Programming & Systems</h3>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Python & R Programming</span>
+                                <span>95%</span>
+                            </div>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 95%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Bash Scripting & Perl</span>
+                                <span>85%</span>
+                            </div>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 85%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>HPC Clusters (Linux/Unix environments)</span>
+                                <span>90%</span>
+                            </div>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 90%"></div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education & Awards Section -->
+    <section class="education-awards-section section-padding section-alt" id="education">
+        <div class="container edu-awards-grid">
+            
+            <!-- Education Column -->
+            <div class="education-col">
+                <div class="section-header">
+                    <h2 class="section-title">Education</h2>
+                    <div class="section-divider"></div>
+                </div>
+                <div class="edu-list">
+                    <!-- Edu Item 1 -->
+                    <div class="edu-item glass-card">
+                        <div class="edu-grade text-gradient">9.5/10 CPI</div>
+                        <h3 class="edu-title">PhD in Biological Sciences</h3>
+                        <p class="edu-inst">IISER Bhopal, India</p>
+                        <p class="edu-date">August 2020 - May 2026</p>
+                        <p class="edu-dept">Department of Biological Sciences</p>
+                    </div>
+
+                    <!-- Edu Item 2 -->
+                    <div class="edu-item glass-card">
+                        <div class="edu-grade text-gradient">8.5/10 CPI</div>
+                        <h3 class="edu-title">M.Sc. in Zoology</h3>
+                        <p class="edu-inst">Banaras Hindu University (BHU), Varanasi</p>
+                        <p class="edu-date">August 2018 - April 2020</p>
+                        <p class="edu-dept">Department of Zoology</p>
+                    </div>
+
+                    <!-- Edu Item 3 -->
+                    <div class="edu-item glass-card">
+                        <div class="edu-grade text-gradient">8.5/10 CPI</div>
+                        <h3 class="edu-title">B.Sc. (Hons.) in Zoology</h3>
+                        <p class="edu-inst">Banaras Hindu University (BHU), Varanasi</p>
+                        <p class="edu-date">August 2014 - April 2017</p>
+                        <p class="edu-dept">MMV, BHU</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Distinctions Column -->
+            <div class="awards-col">
+                <div class="section-header">
+                    <h2 class="section-title">Distinctions & Awards</h2>
+                    <div class="section-divider"></div>
+                </div>
+                <div class="awards-list">
+                    <!-- Award 1 -->
+                    <div class="award-card glass-card">
+                        <div class="award-badge text-gradient">Second Prize</div>
+                        <h3 class="award-title">Forensic Hackathon 2025</h3>
+                        <p class="award-desc">National Forensic Sciences University, in collaboration with Ministry of Home Affairs, Govt. of India.</p>
+                    </div>
+
+                    <!-- Award 2 -->
+                    <div class="award-card glass-card">
+                        <div class="award-badge text-gradient">Rank 18</div>
+                        <h3 class="award-title">CSIR–UGC NET (JRF/LS)</h3>
+                        <p class="award-desc">December 2018 National Eligibility Test — All India Rank (AIR) 18.</p>
+                    </div>
+
+                    <!-- Award 3 -->
+                    <div class="award-card glass-card">
+                        <div class="award-badge text-gradient">Qualified</div>
+                        <h3 class="award-title">GATE 2020</h3>
+                        <p class="award-desc">Graduate Aptitude Test in Engineering — Bioinformatics / Ecology stream.</p>
+                    </div>
+
+                    <!-- Award 4 -->
+                    <div class="award-card glass-card">
+                        <div class="award-badge text-gradient">Qualified</div>
+                        <h3 class="award-title">JGEEBILS 2019</h3>
+                        <p class="award-desc">Joint Graduate Entrance Examination for Biology and Interdisciplinary Life Sciences.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Teaching & Presentations -->
+    <section class="teaching-section section-padding">
+        <div class="container teaching-grid">
+            <div class="teaching-col glass-card">
+                <h3 class="sub-section-title"><i data-lucide="book-open"></i> Teaching Experience</h3>
+                <div class="teaching-experience">
+                    <h4>Teaching Assistant</h4>
+                    <p class="teaching-meta">IISER Bhopal, India | 2020 - 2026</p>
+                    <ul class="teaching-points">
+                        <li><strong>Fundamentals of Molecular Biology:</strong> Conducted tutorial sessions explaining basic molecular biology principles to undergraduate cohorts.</li>
+                        <li><strong>Bioinformatics:</strong> Mentored MS and PhD students on CLI operations, metagenomic pipelines, and biochemical software tools.</li>
+                        <li><strong>Computational Genomics (NPTEL):</strong> Assisted in facilitating national-level courses for genome-scale analyses.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="conferences-col glass-card">
+                <h3 class="sub-section-title"><i data-lucide="presentation"></i> Conferences & Workshops</h3>
+                <ul class="conf-list">
+                    <li>
+                        <span class="conf-type">Poster Presentation</span>
+                        <p class="conf-details"><strong>EMBO | EMBL Symposium:</strong> The Human Microbiome (2025), Heidelberg, Germany.</p>
+                    </li>
+                    <li>
+                        <span class="conf-type font-gold">Invited Oral Speaker</span>
+                        <p class="conf-details"><strong>National Conference (Microbiome & Biotic Family 2025):</strong> Presented <em>"Functional insights into Indian human microbiomes revealed through multi-omics approaches"</em>, Swami Rama Himalayan University, Dehradun.</p>
+                    </li>
+                    <li>
+                        <span class="conf-type">Workshop Instructor</span>
+                        <p class="conf-details"><strong>Three-Day National Workshop:</strong> Instructed on <em>"Understanding Health and Wellness through Microbiome Research"</em> at National Institute of Ayurveda, Jaipur.</p>
+                    </li>
+                    <li>
+                        <span class="conf-type">Oral Presentation</span>
+                        <p class="conf-details"><strong>Annual Biology Meet 2024:</strong> IISER, Bhopal.</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Footer Section -->
+    <footer class="contact-footer section-padding" id="contact">
+        <div class="container contact-container">
+            <div class="contact-info-col">
+                <h2 class="footer-title">Let's Collaboratively Investigate Microbial Ecosystems</h2>
+                <p class="footer-desc">
+                    Interested in microbiome dynamics, disease biomarker models, or comparative genomics? Drop an email or message to discuss research collaborations, academic questions, or job opportunities.
+                </p>
+                <div class="contact-links-list">
+                    <div class="contact-link-item">
+                        <i data-lucide="mail"></i>
+                        <div>
+                            <span>Primary Academic Email</span>
+                            <a href="mailto:deepika20@iiserb.ac.in">deepika20@iiserb.ac.in</a>
+                        </div>
+                    </div>
+                    <div class="contact-link-item">
+                        <i data-lucide="mail"></i>
+                        <div>
+                            <span>Alternative Personal Email</span>
+                            <a href="mailto:deepikapateriya94@gmail.com">deepikapateriya94@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="contact-link-item">
+                        <i data-lucide="map-pin"></i>
+                        <div>
+                            <span>Location</span>
+                            <p>MetaBioSys Lab, IISER Bhopal, Madhya Pradesh, India</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-form-col glass-card">
+                <form class="contact-form" id="contact-form">
+                    <h3>Send a Message</h3>
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" required placeholder="e.g. Dr. John Doe">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" required placeholder="e.g. john.doe@uni.edu">
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" required placeholder="Collaboration, Inquiry...">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" rows="5" required placeholder="Write your message here..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">
+                        Send Message <i data-lucide="send"></i>
+                    </button>
+                    <div id="form-feedback" class="form-feedback"></div>
+                </form>
+            </div>
+        </div>
+
+        <div class="container footer-bottom">
+            <div class="divider"></div>
+            <div class="footer-bottom-flex">
+                <p>&copy; 2026 Dr. Deepika Pateriya. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="https://orcid.org/0009-0004-5618-8556" target="_blank">ORCID</a>
+                    <a href="https://metabiosys.iiserb.ac.in/" target="_blank">MetaBioSys Lab</a>
+                    <a href="#about">About</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="/script.js"></script>
 </body>
-</html>  
+</html>
